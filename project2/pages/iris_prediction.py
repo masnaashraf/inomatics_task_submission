@@ -34,7 +34,7 @@ def user_input():
     PetalWidthCm=st.slider("petal width",0.1,2.5,0.2)
 
     data={"sepal_length":SepalLengthCm,
-          "sepal_width":sSepalWidthCm,
+          "sepal_width":SepalWidthCm,
           "petal_length":PetalLengthCm,
           "petal_width":PetalWidthCm
           }
