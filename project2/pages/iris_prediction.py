@@ -28,15 +28,15 @@ Give it a try""")
 st.header("User Input Parameters")
 
 def user_input():
-    sepal_length=st.slider("sepal lenght",4.3,7.9,5.4)
-    sepal_width=st.slider("sepal width",2.0,4.4,3.4)
-    petal_length=st.slider("petal lenght",1.0,6.9,1.3)
-    petal_width=st.slider("petal width",0.1,2.5,0.2)
+    SepalLengthCm=st.slider("sepal lenght",4.3,7.9,5.4)
+    SepalWidthCm=st.slider("sepal width",2.0,4.4,3.4)
+    PetalLengthCm=st.slider("petal lenght",1.0,6.9,1.3)
+    PetalWidthCm=st.slider("petal width",0.1,2.5,0.2)
 
-    data={"sepal_length":sepal_length,
-          "sepal_width":sepal_width,
-          "petal_length":petal_length,
-          "petal_width":petal_width
+    data={"sepal_length":SepalLengthCm,
+          "sepal_width":sSepalWidthCm,
+          "petal_length":PetalLengthCm,
+          "petal_width":PetalWidthCm
           }
     features=pd.DataFrame(data,index=[0])
     return features
